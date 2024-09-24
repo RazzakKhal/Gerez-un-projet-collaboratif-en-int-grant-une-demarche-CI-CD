@@ -1,5 +1,4 @@
 name: Integration continuous
-
 on: 
   push: 
     branches:
