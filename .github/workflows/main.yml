@@ -52,9 +52,11 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
           cache: maven
-      - name: build and test
+      - name: build and test and generate converage report
         working-directory: back
-        run: mvn install
+        run: |
+          mvn install
+          mvn jacoco:report
       
 
 
