@@ -37,7 +37,7 @@ jobs:
       - name: Run tests
         working-directory: front
         run: |
-          npm run test -- --watch=false --browsers=ChromeHeadless
+          npm run test -- --watch=false --browsers=ChromeHeadless --code-coverage
 
   backend-test:
 
