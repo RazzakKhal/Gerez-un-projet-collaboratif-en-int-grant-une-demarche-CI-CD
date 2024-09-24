@@ -53,9 +53,9 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Build and Test
+        working-directory: back
         if: always()
         run: mvn -B package --file pom.xml                 
-        continue-on-error: true
 
       
 
