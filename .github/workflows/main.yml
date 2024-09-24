@@ -1,12 +1,15 @@
 name: Integration continuous
-on: 
-  push: 
+
+# Déclenche le workflow sur les push et pull requests vers la branche main
+on:
+  push:
     branches:
-      -main
+      - main
   pull_request:
     branches:
-      -main
+      - main
 
+# Définit les jobs du workflow
 jobs:
   frontend-test:
     # Le job est exécuté sur une machine virtuelle Ubuntu
@@ -32,3 +35,4 @@ jobs:
       - name: Run tests
         run: |
           npm run test -- --watch=false --browsers=ChromeHeadless
+
