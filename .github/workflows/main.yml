@@ -54,8 +54,7 @@ jobs:
           cache: maven
       - name: build and test
         working-directory: back
-        run: |
-          mvn install && mvn test
+        run: mvn install
       
 
 
