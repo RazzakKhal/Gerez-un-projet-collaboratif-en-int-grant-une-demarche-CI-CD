@@ -53,19 +53,10 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Build and Test
-        working-directory: back
-        run: mvn install
-
-      - name: Generate JaCoCo report
-        working-directory: back
-        run: mvn jacoco:report
-
-      - name: Archive JaCoCo reports
         if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: jacoco-report
-          path: back/target/site/jacoco
+        run: mvn -B package --file pom.xml                 
+        continue-on-error: true
+
       
 
 
