@@ -29,11 +29,13 @@ jobs:
 
       # Installer les dépendances
       - name: Install dependencies
+        working-directory: front
         run: |
           yarn install
 
       # Lancer les tests
       - name: Run tests
+        working-directory: front
         run: |
           npm run test -- --watch=false --browsers=ChromeHeadless
 
