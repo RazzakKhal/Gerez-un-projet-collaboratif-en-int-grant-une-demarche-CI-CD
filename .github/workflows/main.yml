@@ -53,7 +53,7 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: build and test
-        working-directory: backend
+        working-directory: back
         run: mvn install
       
 
