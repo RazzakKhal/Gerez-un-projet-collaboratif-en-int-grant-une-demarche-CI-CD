@@ -83,7 +83,7 @@ jobs:
         with:
           projectBaseDir: back
           args: >
-            -Dsonar.java.binaries=back/target/classes
+            -Dsonar.java.binaries=target/classes
             -Dsonar.projectKey=RazzakKhal_Gerez-un-projet-collaboratif-en-int-grant-une-demarche-CI-CD
             -Dsonar.organization=razzakkhal
 
