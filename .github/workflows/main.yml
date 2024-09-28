@@ -46,7 +46,9 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           projectBaseDir: front
-
+          args: >
+            -Dsonar.projectKey=your_frontend_project_key
+            -Dsonar.organization=your_organization_key
 
   backend-test:
 
