@@ -47,8 +47,8 @@ jobs:
         with:
           projectBaseDir: front
           args: >
-            -Dsonar.projectKey=your_frontend_project_key
-            -Dsonar.organization=your_organization_key
+            -Dsonar.projectKey=RazzakKhal_Gerez-un-projet-collaboratif-en-int-grant-une-demarche-CI-CD
+            -Dsonar.organization=razzakkhal
 
   backend-test:
 
@@ -83,8 +83,8 @@ jobs:
         with:
           projectBaseDir: back
           args: >
-            -Dsonar.projectKey=your_frontend_project_key
-            -Dsonar.organization=your_organization_key
+            -Dsonar.projectKey=RazzakKhal_Gerez-un-projet-collaboratif-en-int-grant-une-demarche-CI-CD
+            -Dsonar.organization=razzakkhal
 
 
 
