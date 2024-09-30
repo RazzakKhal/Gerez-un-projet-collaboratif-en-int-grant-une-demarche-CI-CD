@@ -54,7 +54,7 @@ jobs:
         with:
           projectBaseDir: front
           args: >
-            -Dsonar.projectKey=RazzakKhal_Gerez-un-projet-collaboratif-en-int-grant-une-demarche-CI-CD
+            -Dsonar.projectKey=RazzakKhal_Gerez-un-projet-collaboratif-en-int-grant-une-demarche-CI-CD-front
             -Dsonar.organization=razzakkhal
 
       # Se connecter à Docker Hub
@@ -106,7 +106,7 @@ jobs:
           projectBaseDir: back
           args: >
             -Dsonar.java.binaries=target/classes
-            -Dsonar.projectKey=RazzakKhal_Gerez-un-projet-collaboratif-en-int-grant-une-demarche-CI-CD
+            -Dsonar.projectKey=RazzakKhal_Gerez-un-projet-collaboratif-en-int-grant-une-demarche-CI-CD-back
             -Dsonar.organization=razzakkhal
 
       # Se connecter à Docker Hub
