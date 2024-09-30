@@ -37,7 +37,7 @@ jobs:
       - name: Run tests
         working-directory: front
         run: |
-          npm run test -- --watch=false --code-coverage --browsers=ChromeHeadless
+          npm run test -- --watch=false --code-coverage
 
       # Upload du rapport de couverture de test
       - name: Upload coverage report
